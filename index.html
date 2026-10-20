@@ -117,6 +117,9 @@ section{padding:3.5rem 0}
 .price .addons li{display:flex;justify-content:space-between;gap:1rem;text-align:left;font-weight:400}
 .price .addons li span:last-child{font-weight:600;color:var(--berry);white-space:nowrap}
 .travel{font-size:.9rem;color:var(--muted);font-style:italic;margin:1rem 0 0}
+.large{margin-top:1.5rem;padding:1.25rem;border-radius:14px;background:var(--blush-soft);text-align:left}
+.large p{margin:0 0 1rem;font-size:1rem}
+.large .large-title{font-family:"Playfair Display",Georgia,serif;font-weight:700;color:var(--berry-deep);font-size:1.15rem;margin-bottom:.35rem}
 .book{text-align:center}
 .book .script{font-family:"Allura",cursive;font-size:clamp(2.6rem,9vw,3.6rem);color:var(--berry);margin:0;line-height:1.1}
 .book p{max-width:44ch;margin:.5rem auto 1.75rem;color:var(--muted)}
@@ -189,19 +192,24 @@ footer p{margin:.25rem 0}
 <section class="band">
   <div class="wrap package">
     <div class="price">
-      <p class="amt">$300</p>
+      <p class="amt">$400</p>
       <p class="min">minimum</p>
       <ul>
         <li>Two hours of cake bar service</li>
-        <li>Includes 20 mini cakes</li>
+        <li>Includes 30 mini cakes</li>
       </ul>
       <p class="addons-title">Add-ons</p>
       <ul class="addons">
         <li><span>Additional mini cakes</span><span>$10 each</span></li>
-        <li><span>Additional service hour</span><span>$150</span></li>
+        <li><span>Additional service hour, includes 10 more mini cakes</span><span>$150</span></li>
         <li><span>Premium toppings</span><span>Upon request</span></li>
       </ul>
       <p class="travel">A travel fee may apply depending on your event location.</p>
+      <div class="large">
+        <p class="large-title">Hosting a large event?</p>
+        <p>For bigger guest counts, ask about the Stephcakes Cupcake Bar: freshly baked cupcakes customized on-site with the same frostings, toppings, and drizzles.</p>
+        <a class="btn solid" href="#book">Ask for a quote</a>
+      </div>
     </div>
     <div>
       <h2>We handle the setup. You enjoy the party.</h2>
@@ -241,7 +249,7 @@ footer p{margin:.25rem 0}
 
 <div class="canopy blush" aria-hidden="true" style="transform:scaleY(-1)"></div>
 
-<section class="book">
+<section class="book" id="book">
   <div class="wrap">
     <p class="script">Let’s make your event unforgettable!</p>
     <p>Now booking indoor and outdoor events in Boston and surrounding areas. Call, text, email, or send a DM to check availability for your date.</p>
